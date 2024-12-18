@@ -15,7 +15,7 @@ for (var i = 0; i < row; i++) {
     }
 }
 
-//Gerar todos os blocos
+//Gerar 1 bloco pela primeira vez
 for (var X = 0; X < 1; X++) 
 {
 	for (var Y = 0; Y < 1; Y++) 

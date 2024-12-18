@@ -33,7 +33,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.6.2.162",
+    "IDEVersion":"2024.8.1.171",
   },
   "name":"gml-mineblocks-4d",
   "resources":[
@@ -44,6 +44,7 @@
     {"id":{"name":"Obj_Player","path":"objects/Obj_Player/Obj_Player.yy",},},
     {"id":{"name":"Room_Initialize","path":"rooms/Room_Initialize/Room_Initialize.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"blocks","path":"scripts/blocks/blocks.yy",},},
     {"id":{"name":"drawWorld","path":"scripts/drawWorld/drawWorld.yy",},},
     {"id":{"name":"GigaFrankBody","path":"sprites/GigaFrankBody/GigaFrankBody.yy",},},
     {"id":{"name":"GigaFrankBodyLeftArm","path":"sprites/GigaFrankBodyLeftArm/GigaFrankBodyLeftArm.yy",},},

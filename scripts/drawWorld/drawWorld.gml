@@ -3,12 +3,17 @@ function verifyBlock(blockName)
 {
 	switch blockName
 	{
-		case "teste":{return [0, 12];}
-		case "bedrock":{return [3, 1];}
+		case "teste":{return [0, 192];}
+		case "select":{return [0, 144];}
 		
-		case "oakPlanks":{return [5, 0];}
-		case "dirt":{return [2, 0];}
+		case "bedrock":{return [48, 16];}
 		case "grass":{return [0, 0];}
+		case "chest":{return [160, 0];}
+		
+		
+		case "oakPlanks":{return [80, 0];}
+		case "dirt":{return [32, 0];}
+		
 		default:{return false;}
 	}
 }
@@ -16,9 +21,9 @@ function verifyBlock(blockName)
 //Desenhar o Bloco
 function drawBlock(blockPosition, placeX, placeY)
 {
-	placeBlock(16 * blockPosition[0], 
-						16 * blockPosition[1], 
-						placeX, placeY, 16, 16);
+	placeBlock(blockPosition[0], 
+			   blockPosition[1], 
+			   placeX, placeY, 16, 16);
 }
 
 function placeBlock(blockX, blockY, placeX, placeY, sizeX, sizeY)

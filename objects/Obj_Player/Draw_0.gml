@@ -1,15 +1,22 @@
 draw_self()
 
-var centerX = 20;
-var centerY = 20;
+if distance_to_point(mouse_x,mouse_y) < global.distanceToBreakBlocks
+{
+	mouseX = mouse_x
+	mouseY = mouse_y
+}
 
-if flip = 1
+draw_line(Obj_Player.x,Obj_Player.y,mouseX,mouseY)
+
+if horizontalSpeed >0
 {
 	centerX = 20;
+	flip = 1
 }
-else if flip = -1
+else if horizontalSpeed < 0
 {
 	centerX = -20;
+	flip = -1
 }
 
 //De pé

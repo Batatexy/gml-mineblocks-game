@@ -14,20 +14,18 @@ keyInventory = keyboard_check_pressed(ord("E"));
 keyDrop =  keyboard_check(ord("Q"));
 keyChangeHands = keyboard_check_pressed(ord("F"));
 
-if horizontalSpeed > 0
+
+
+//Melhorar esse sistema de distancia dos blocos
+if distance_to_point(mouse_x,mouse_y) < global.distanceToBreakBlocks
 {
-	flip = 1;
-}
-
-if horizontalSpeed < 0
-{
-	flip = -1;
-}
-
-
-
-
-if mouse_check_button(mb_right)
-{
-	global.world[int64(mouse_y/16)][int64(mouse_x/16)] = "dirt"
+	if mouse_check_button(mb_right)
+	{
+		if global.world[int64(mouse_y/16)][int64(mouse_x/16)] = ""
+		{
+			whereToPlaceBlock("definirLayer", "grass", 1, 1, 1, 1)
+		}
+	}
+	
+	
 }

@@ -1,4 +1,4 @@
-if distance_to_object(Obj_Player) < 30
+if distance_to_object(Obj_Player) < global.distanceToBreakBlocks
 {
 	if (position_meeting(mouse_x, mouse_y, id)) 
 	{
