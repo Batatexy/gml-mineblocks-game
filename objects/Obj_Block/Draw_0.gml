@@ -1,8 +1,8 @@
-if distance_to_object(Obj_Player) < 80
+if distance_to_object(Obj_Player) < 150
 {
 	drawBlock(blockPlace, x, y);
 }
 else
 {
-	instance_destroy();
+	instance_destroy()
 }

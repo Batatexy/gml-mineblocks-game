@@ -1,24 +1,24 @@
-//Criação da matriz do mundo
-global.world = 
-[
-    ["grass", "grass", "grass", "grass","grass","grass",
-	"grass","grass","grass","grass","grass","grass","grass","grass","grass",
-	"grass","grass","grass","grass","grass","grass","grass","grass","grass",
-	"grass","grass","grass","grass","grass","grass","grass","grass","grass",
-	],
-	["oakPlanks", "dirt", "dirt", "dirt"],
-	["oakPlanks", "dirt", "dirt", "dirt"],
-	["dirt", "dirt", "dirt", "dirt"],
-	["dirt", "dirt", "dirt", "dirt"]
-];
+row = 16000;
+col = 300;
 
+global.world = array_create(row);
 
-timer = 10
+for (var i = 0; i < row; i++) 
+{
+    global.world[i] = array_create(col);
+}
+
+for (var i = 0; i < row; i++) {
+    for (var j = 0; j < col; j++) 
+	{
+        global.world[i][j] = "dirt";
+    }
+}
 
 //Gerar todos os blocos
-for (var X = 0; X < array_length(global.world); X++) 
+for (var X = 0; X < 1; X++) 
 {
-	for (var Y = 0; Y < array_length(global.world[X]); Y++) 
+	for (var Y = 0; Y < 1; Y++) 
 	{
 		var blockPosition = verifyBlock(global.world[X][Y])
 		if blockPosition != false
@@ -35,5 +35,3 @@ for (var X = 0; X < array_length(global.world); X++)
 		}
 	}
 }
-			
-

@@ -1,14 +1,6 @@
-
-if timer > 0
+for (var X = findPositionMinor(Obj_Player.y, -6); X < findPositionMajor(Obj_Player.y, 6, row); X++) 
 {
-	global.world = array_concat(global.world, [["teste", "teste"]]);
-	timer--;
-}
-
-//Gerar todos os blocos
-for (var X = 0; X < array_length(global.world); X++) 
-{
-	for (var Y = 0; Y < array_length(global.world[X]); Y++) 
+	for (var Y = findPositionMinor(Obj_Player.x, -10); Y < findPositionMajor(Obj_Player.x, 10, col); Y++)
 	{
 		if instance_exists(Obj_Block)
 		{

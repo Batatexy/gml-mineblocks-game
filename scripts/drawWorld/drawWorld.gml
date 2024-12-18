@@ -26,37 +26,27 @@ function placeBlock(blockX, blockY, placeX, placeY, sizeX, sizeY)
 	draw_sprite_part(Sprite_Blocks, 0, blockX, blockY,sizeX, sizeY, placeX, placeY);
 }
 
-
-
-
-function salvarStepBlocksManager()
+//Renderizar partes do mapa
+function findPositionMinor(position, value)
 {
-	if instance_exists(Obj_Block)
-		{
-			var xPosition = X * 16;
-			var yPosition = Y * 16;
-			
-			//Quando der refresh no mapa, não duplicar blocos já colocados
-			var canPlaceBlocks = true
-			with(Obj_Block) 
-			{
-				if xPosition == x and yPosition == y
-				{
-					canPlaceBlocks = false
-				}
-			}
-			
-			if canPlaceBlocks = true
-			{
-				var blockPosition = verifyBlock(global.world[X][Y])
-				if blockPosition != false
-				{
-					var blockInstance = instance_create_layer(xPosition, yPosition, "Blocks", Obj_Block);
-					with (blockInstance)
-					{
-						blockPlace = blockPosition
-					}
-				}
-			}
-		}
+	if (int64(position / 16) + value > 0)
+	{
+		return int64(position / 16) + value;
+	}
+	else
+	{
+		return 0
+	}
+}
+
+function findPositionMajor(position, value, size)
+{
+	if (int64(position / 16) + value < size)
+	{
+		return int64(position / 16) + value;
+	}
+	else
+	{
+		return size
+	}
 }

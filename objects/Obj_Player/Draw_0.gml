@@ -12,7 +12,6 @@ else if flip = -1
 	centerX = -20;
 }
 
- 
 //De pé
 if !shift
 {

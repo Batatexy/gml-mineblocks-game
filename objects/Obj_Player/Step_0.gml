@@ -23,3 +23,11 @@ if horizontalSpeed < 0
 {
 	flip = -1;
 }
+
+
+
+
+if mouse_check_button(mb_right)
+{
+	global.world[int64(mouse_y/16)][int64(mouse_x/16)] = "dirt"
+}
