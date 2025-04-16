@@ -8,12 +8,12 @@ for (var X = findPositionMinor(Obj_Player.y, -6); X < findPositionMajor(Obj_Play
 			var yPosition = Y * 16;
 			
 			//Quando der refresh no mapa, não duplicar blocos já colocados
-			var canPlaceBlocks = true
+			var canPlaceBlocks = true;
 			with(Obj_Block) 
 			{
 				if xPosition == y and yPosition == x
 				{
-					canPlaceBlocks = false
+					canPlaceBlocks = false;
 				}
 			}
 			
@@ -25,7 +25,7 @@ for (var X = findPositionMinor(Obj_Player.y, -6); X < findPositionMajor(Obj_Play
 					var blockInstance = instance_create_layer(yPosition, xPosition, "Blocks", Obj_Block);
 					with (blockInstance)
 					{
-						blockPlace = blockPosition
+						blockPlace = blockPosition;
 					}
 				}
 			}

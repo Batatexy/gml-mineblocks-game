@@ -9,3 +9,6 @@ if distance_to_object(Obj_Player) < global.distanceToBreakBlocks
 		}
 	}
 }
+
+
+

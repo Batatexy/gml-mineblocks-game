@@ -14,8 +14,6 @@ keyInventory = keyboard_check_pressed(ord("E"));
 keyDrop =  keyboard_check(ord("Q"));
 keyChangeHands = keyboard_check_pressed(ord("F"));
 
-
-
 //Melhorar esse sistema de distancia dos blocos
 if distance_to_point(mouse_x,mouse_y) < global.distanceToBreakBlocks
 {

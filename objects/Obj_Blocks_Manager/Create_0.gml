@@ -1,5 +1,5 @@
-row = 16000;
-col = 300;
+row = 300;
+col = 16000;
 
 global.world = array_create(row);
 
@@ -8,7 +8,8 @@ for (var i = 0; i < row; i++)
     global.world[i] = array_create(col);
 }
 
-for (var i = 0; i < row; i++) {
+for (var i = 0; i < row; i++) 
+{
     for (var j = 0; j < col; j++) 
 	{
         global.world[i][j] = "dirt";
